@@ -11,6 +11,7 @@
 		6E0F8C301E5D834A000B7798 /* BLDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F8C2D1E5D834A000B7798 /* BLDBHelper.m */; };
 		6E0F8C311E5D834A000B7798 /* BLDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F8C2F1E5D834A000B7798 /* BLDBModel.m */; };
 		6E0F8C391E5D9218000B7798 /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F8C381E5D9218000B7798 /* Chapter.m */; };
+		6E1903CE1E6CF4D30051C28C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E1903CD1E6CF4D30051C28C /* Images.xcassets */; };
 		6E4DC6BC1E5FC3B1000921E1 /* background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DC6BB1E5FC3B1000921E1 /* background.jpeg */; };
 		6E4DC6C01E5FFC85000921E1 /* BookListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4DC6BE1E5FFC85000921E1 /* BookListCell.m */; };
 		6E4DC6C11E5FFC85000921E1 /* BookListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DC6BF1E5FFC85000921E1 /* BookListCell.xib */; };
@@ -22,7 +23,6 @@
 		6E8DE3181E5BD2310058E6CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE3171E5BD2310058E6CD /* AppDelegate.m */; };
 		6E8DE31B1E5BD2310058E6CD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE31A1E5BD2310058E6CD /* MainViewController.m */; };
 		6E8DE3201E5BD2310058E6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E8DE31F1E5BD2310058E6CD /* Assets.xcassets */; };
-		6E8DE3231E5BD2310058E6CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E8DE3211E5BD2310058E6CD /* LaunchScreen.storyboard */; };
 		6E8DE32E1E5BD2320058E6CD /* BLBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE32D1E5BD2320058E6CD /* BLBookTests.m */; };
 		6E8DE3391E5BD2320058E6CD /* BLBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE3381E5BD2320058E6CD /* BLBookUITests.m */; };
 		6E8DE3891E5BDFBC0058E6CD /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE3881E5BDFBC0058E6CD /* BookViewController.m */; };
@@ -62,6 +62,7 @@
 		6E0F8C2F1E5D834A000B7798 /* BLDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDBModel.m; sourceTree = "<group>"; };
 		6E0F8C371E5D9218000B7798 /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
 		6E0F8C381E5D9218000B7798 /* Chapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter.m; sourceTree = "<group>"; };
+		6E1903CD1E6CF4D30051C28C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6E4DC6BB1E5FC3B1000921E1 /* background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpeg; sourceTree = "<group>"; };
 		6E4DC6BD1E5FFC85000921E1 /* BookListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListCell.h; sourceTree = "<group>"; };
 		6E4DC6BE1E5FFC85000921E1 /* BookListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListCell.m; sourceTree = "<group>"; };
@@ -80,7 +81,6 @@
 		6E8DE3191E5BD2310058E6CD /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		6E8DE31A1E5BD2310058E6CD /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		6E8DE31F1E5BD2310058E6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6E8DE3221E5BD2310058E6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E8DE3241E5BD2310058E6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E8DE3291E5BD2320058E6CD /* BLBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8DE32D1E5BD2320058E6CD /* BLBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLBookTests.m; sourceTree = "<group>"; };
@@ -232,7 +232,6 @@
 			children = (
 				6E4DC6BB1E5FC3B1000921E1 /* background.jpeg */,
 				6E8DE31F1E5BD2310058E6CD /* Assets.xcassets */,
-				6E8DE3211E5BD2310058E6CD /* LaunchScreen.storyboard */,
 				6E8DE3241E5BD2310058E6CD /* Info.plist */,
 			);
 			name = Resource;
@@ -271,6 +270,7 @@
 				6E0F8C331E5D8366000B7798 /* Views */,
 				6E0F8C321E5D8355000B7798 /* Controllers */,
 				6E0F8C271E5D8277000B7798 /* Utils */,
+				6E1903CD1E6CF4D30051C28C /* Images.xcassets */,
 				6E8DE3131E5BD2310058E6CD /* Supporting Files */,
 			);
 			path = BLBook;
@@ -448,8 +448,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E4DC6C91E604450000921E1 /* PageViewCell.xib in Resources */,
+				6E1903CE1E6CF4D30051C28C /* Images.xcassets in Resources */,
 				6E4DC6C11E5FFC85000921E1 /* BookListCell.xib in Resources */,
-				6E8DE3231E5BD2310058E6CD /* LaunchScreen.storyboard in Resources */,
 				6E4DC6BC1E5FC3B1000921E1 /* background.jpeg in Resources */,
 				6E8DE3201E5BD2310058E6CD /* Assets.xcassets in Resources */,
 			);
@@ -577,17 +577,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		6E8DE3211E5BD2310058E6CD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6E8DE3221E5BD2310058E6CD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		6E8DE33B1E5BD2320058E6CD /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -682,6 +671,7 @@
 			baseConfigurationReference = F6BBD405658B1D1141CF7C3D /* Pods-BLBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 57WTDCG577;
@@ -702,6 +692,7 @@
 			baseConfigurationReference = DA1D74B2D8BE94AF57A2C257 /* Pods-BLBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 57WTDCG577;

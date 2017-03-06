@@ -26,6 +26,7 @@
 @property (nonatomic, strong)UILabel        *titleLabel;
 @property (nonatomic, strong)UILabel        *line1;
 @property (nonatomic, strong)UILabel        *line2;
+@property (nonatomic, strong)UITapGestureRecognizer *tap;
 
 @property (nonatomic, strong)Book *book;
 
@@ -35,10 +36,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initUI];
+    [self bl_initUI];
+    [self bl_initTap];
 }
 
-- (void)initUI
+- (void)bl_initUI
 {
     self.title = @"添加小说";
     
@@ -124,6 +126,13 @@
     [self bl_makeConstraints];
 }
 
+- (void)bl_initTap
+{
+    self.tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapEvent)];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+}
+
 - (void)bl_makeConstraints
 {
     [self.backImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -183,6 +192,21 @@
     }];
 }
 
+- (void)keyboardWillShow:(NSNotification *)notification
+{
+    [[UIApplication sharedApplication].keyWindow addGestureRecognizer:self.tap];
+}
+
+- (void)keyboardWillHide:(NSNotification *)notification
+{
+    [[UIApplication sharedApplication].keyWindow removeGestureRecognizer:self.tap];
+}
+
+- (void)tapEvent
+{
+    [self.view endEditing:YES];
+}
+
 - (void)backButtonClick
 {
     [self.navigationController popViewControllerAnimated:YES];
@@ -232,7 +256,9 @@
 {
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc]initWithSessionConfiguration:configuration];
+    @weakify(self)
     _task = [manager downloadTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[self.bookUrlTextField.text stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet characterSetWithCharactersInString:@"`#%^{}\"[]|\\<> "].invertedSet]]] progress:^(NSProgress * _Nonnull downloadProgress) {
+        @strongify(self)
         BLLogInfo(@"%f",1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount);
         self.downloadView.progress = 1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount;
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
@@ -241,8 +267,10 @@
         BLLogInfo(@"download path:%@",path);
         return [NSURL fileURLWithPath:path];
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+        @strongify(self)
         if (error) {
             BLLogError(@"download error:%@",error);
+            [self.view makeToast:@"下载失败!"];
             [self.book deleteObject];
         }else{
             BLLogInfo(@"download complete:%@",filePath.absoluteString);
@@ -253,12 +281,13 @@
             if (isSuccess) {
                 BLLogInfo(@"unzip file success and remove zip file");
                 //解压成功 删除压缩文件
-                [FileUtil removeItemAtPath:path];
-                //退出
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                    [FileUtil removeItemAtPath:path];
+                });
                 [self.view makeToast:@"download and unzip success!"];
-                [self.navigationController popViewControllerAnimated:YES];
             }else{
                 BLLogError(@"unzip file failed");
+                [self.view makeToast:@"解压失败!"];
             }
             [self loadBook];
         }
@@ -279,11 +308,14 @@
             BLLogInfo(@"url :%@",url);
             [BLBookParser parserBookAtPath:url deleteWhenSuccess:YES bookId:self.book.blID];
         }else{
-            [FileUtil removeItemAtPath:url];
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [FileUtil removeItemAtPath:url];
+            });
         }
         fileName = [enumerator nextObject];
     }
-    
+    //退出
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)dealloc
@@ -291,12 +323,14 @@
     if (_task) {
         [_task cancel];
     }
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
 }
 
 #pragma mark - deleagte
 
 - (void)didClickDownloadView:(BLDownloadView *)downloadView
 {
+    [self.view endEditing:YES];
     [self submitButtonClick];
 }
 

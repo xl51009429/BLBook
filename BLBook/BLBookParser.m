@@ -25,7 +25,9 @@ static NSInteger lineNumsOfPage = 0;
         BLLogError(@"read file content failed");
     }
     if (flag) {
-        [FileUtil removeItemAtPath:path];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            [FileUtil removeItemAtPath:path];
+        });
     }
 }
 

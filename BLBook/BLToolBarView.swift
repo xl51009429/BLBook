@@ -9,7 +9,7 @@
 import UIKit
 
 @objc enum ToolBarButtonTag:Int {
-    case ToolBarButtonTagSmall = 1,ToolBarButtonTagNormal,ToolBarButtonTagBig,ToolBarButtonTagDay,ToolBarButtonTagNight
+    case Small = 1,Normal,Big,Day,Night
 }
 
 @objc protocol BLToolBarViewDelegate {
@@ -32,11 +32,11 @@ class BLToolBarView: UIView {
     
     fileprivate func bl_initUI(){
         self.backgroundColor = UIColor.white;
-        let tags:[ToolBarButtonTag] = [.ToolBarButtonTagSmall,
-                                       .ToolBarButtonTagNormal,
-                                       .ToolBarButtonTagBig,
-                                       .ToolBarButtonTagDay,
-                                       .ToolBarButtonTagNight
+        let tags:[ToolBarButtonTag] = [.Small,
+                                       .Normal,
+                                       .Big,
+                                       .Day,
+                                       .Night
         ];
         let images:Array = ["font_size_smaller","font_size1","font_size_larger"]
         let width:CGFloat = 30.0

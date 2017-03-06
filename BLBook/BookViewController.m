@@ -70,7 +70,9 @@
 
 - (void)showAndDissmisToolBar
 {
+    @weakify(self)
     [UIView animateWithDuration:0.2 animations:^{
+        @strongify(self)
         if (self.toolBar.frame.origin.y == kScreenHeight) {
             CGRect newFrame = CGRectMake(self.toolBar.frame.origin.x, kScreenHeight - self.toolBar.frame.size.height, self.toolBar.frame.size.width, self.toolBar.frame.size.height);
             self.toolBar.frame = newFrame;
@@ -123,6 +125,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     //[[UIApplication sharedApplication] setStatusBarHidden:YES];
+    self.toolBar.frame = CGRectMake(self.toolBar.frame.origin.x, kScreenHeight, self.toolBar.frame.size.width, self.toolBar.frame.size.height);
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
@@ -160,7 +163,26 @@
 
 - (void)didSelectWithToolBarView:(BLToolBarView *)toolBar index:(NSInteger)index
 {
-    
+    switch (index) {
+        case ToolBarButtonTagSmall:
+            NSLog(@"11");
+            break;
+        case ToolBarButtonTagNormal:
+            NSLog(@"22");
+            break;
+        case ToolBarButtonTagBig:
+            
+            break;
+        case ToolBarButtonTagDay:
+            
+            break;
+        case ToolBarButtonTagNight:
+            
+            break;
+            
+        default:
+            break;
+    }
 }
 
 @end

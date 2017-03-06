@@ -119,6 +119,7 @@
     if ([Chapter deleteObjects:chapters] && [book deleteObject]) {
         self.books = [[NSMutableArray alloc] initWithArray:[Book selectAll]];
         [self.collectionView reloadData];
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:book.name];
         [self.view makeToast:@"删除成功"];
     }else{
         [self.view makeToast:@"删除失败"];
