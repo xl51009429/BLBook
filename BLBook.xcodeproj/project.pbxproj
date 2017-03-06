@@ -1,2005 +1,809 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>37E363A216211B983F42792E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-BLBook/Pods-BLBook-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>3B4B4D8047056DCC232FBCFA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>65CF75C5282B9514DFBE46E9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>65CF75C5282B9514DFBE46E9</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-BLBook.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6E0F8C271E5D8277000B7798</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6EFD85A21E5E855E0086B7ED</string>
-				<string>6E0F8C2B1E5D8337000B7798</string>
-				<string>6E8DE38A1E5C19810058E6CD</string>
-				<string>6E8DE38B1E5C19810058E6CD</string>
-				<string>6E0F8C281E5D82F3000B7798</string>
-				<string>6E0F8C291E5D82F3000B7798</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Utils</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C281E5D82F3000B7798</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BLBookParser.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C291E5D82F3000B7798</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BLBookParser.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C2A1E5D82F3000B7798</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E0F8C291E5D82F3000B7798</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E0F8C2B1E5D8337000B7798</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6E0F8C2C1E5D834A000B7798</string>
-				<string>6E0F8C2D1E5D834A000B7798</string>
-				<string>6E0F8C2E1E5D834A000B7798</string>
-				<string>6E0F8C2F1E5D834A000B7798</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>BLDB</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C2C1E5D834A000B7798</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BLDBHelper.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C2D1E5D834A000B7798</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BLDBHelper.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C2E1E5D834A000B7798</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BLDBModel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C2F1E5D834A000B7798</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BLDBModel.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C301E5D834A000B7798</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E0F8C2D1E5D834A000B7798</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E0F8C311E5D834A000B7798</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E0F8C2F1E5D834A000B7798</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E0F8C321E5D8355000B7798</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6E8DE3871E5BDFBC0058E6CD</string>
-				<string>6E8DE3881E5BDFBC0058E6CD</string>
-				<string>6E8DE3191E5BD2310058E6CD</string>
-				<string>6E8DE31A1E5BD2310058E6CD</string>
-				<string>6EFD859E1E5E81B30086B7ED</string>
-				<string>6EFD859F1E5E81B30086B7ED</string>
-				<string>6E8C5B101E6583D10058B122</string>
-				<string>6E8C5B111E6583D10058B122</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C331E5D8366000B7798</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6EFD85AA1E5ECC680086B7ED</string>
-				<string>6EFD85AB1E5ECC680086B7ED</string>
-				<string>6E4DC6BD1E5FFC85000921E1</string>
-				<string>6E4DC6BE1E5FFC85000921E1</string>
-				<string>6E4DC6BF1E5FFC85000921E1</string>
-				<string>6E4DC6C51E604450000921E1</string>
-				<string>6E4DC6C61E604450000921E1</string>
-				<string>6E4DC6C71E604450000921E1</string>
-				<string>6EC003961E64230000D82112</string>
-				<string>6EC003971E64230000D82112</string>
-				<string>6E7193D21E681FA400DE140E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C341E5D836B000B7798</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6E0F8C371E5D9218000B7798</string>
-				<string>6E0F8C381E5D9218000B7798</string>
-				<string>6EFD859B1E5E80350086B7ED</string>
-				<string>6EFD859C1E5E80350086B7ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Models</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C351E5D8377000B7798</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6E8DE3161E5BD2310058E6CD</string>
-				<string>6E8DE3171E5BD2310058E6CD</string>
-				<string>6EFD85A11E5E83E00086B7ED</string>
-				<string>6EFD85AD1E5EE5C50086B7ED</string>
-				<string>6EFD85AE1E5EE5C50086B7ED</string>
-				<string>6E7193CD1E67FB8600DE140E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Application</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C361E5D8388000B7798</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6E4DC6BB1E5FC3B1000921E1</string>
-				<string>6E8DE31F1E5BD2310058E6CD</string>
-				<string>6E8DE3241E5BD2310058E6CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resource</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C371E5D9218000B7798</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Chapter.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C381E5D9218000B7798</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Chapter.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E0F8C391E5D9218000B7798</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E0F8C381E5D9218000B7798</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E1903CD1E6CF4D30051C28C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E1903CE1E6CF4D30051C28C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E1903CD1E6CF4D30051C28C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E4DC6BB1E5FC3B1000921E1</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.jpeg</string>
-			<key>path</key>
-			<string>background.jpeg</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E4DC6BC1E5FC3B1000921E1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E4DC6BB1E5FC3B1000921E1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E4DC6BD1E5FFC85000921E1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BookListCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E4DC6BE1E5FFC85000921E1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BookListCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E4DC6BF1E5FFC85000921E1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>BookListCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E4DC6C01E5FFC85000921E1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E4DC6BE1E5FFC85000921E1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E4DC6C11E5FFC85000921E1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E4DC6BF1E5FFC85000921E1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E4DC6C51E604450000921E1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PageViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E4DC6C61E604450000921E1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>PageViewCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E4DC6C71E604450000921E1</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>PageViewCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E4DC6C81E604450000921E1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E4DC6C61E604450000921E1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E4DC6C91E604450000921E1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E4DC6C71E604450000921E1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E7193CD1E67FB8600DE140E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BLBook-Bridging-Header.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E7193D21E681FA400DE140E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BLToolBarView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E7193D31E681FA400DE140E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E7193D21E681FA400DE140E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E8C5B101E6583D10058B122</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ChapterViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8C5B111E6583D10058B122</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ChapterViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8C5B121E6583D10058B122</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E8C5B111E6583D10058B122</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E8DE3071E5BD2310058E6CD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6E8DE3121E5BD2310058E6CD</string>
-				<string>6E8DE32C1E5BD2320058E6CD</string>
-				<string>6E8DE3371E5BD2320058E6CD</string>
-				<string>6E8DE3111E5BD2310058E6CD</string>
-				<string>7B8F22CB9EDF8F8C3320A8C5</string>
-				<string>3B4B4D8047056DCC232FBCFA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3081E5BD2310058E6CD</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0810</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>5i5j</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>6E8DE30F1E5BD2310058E6CD</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.1</string>
-						<key>DevelopmentTeam</key>
-						<string>57WTDCG577</string>
-						<key>LastSwiftMigration</key>
-						<string>0810</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-					</dict>
-					<key>6E8DE3281E5BD2320058E6CD</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.1</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>6E8DE30F1E5BD2310058E6CD</string>
-					</dict>
-					<key>6E8DE3331E5BD2320058E6CD</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.1</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>6E8DE30F1E5BD2310058E6CD</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>6E8DE30B1E5BD2310058E6CD</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>6E8DE3071E5BD2310058E6CD</string>
-			<key>productRefGroup</key>
-			<string>6E8DE3111E5BD2310058E6CD</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>6E8DE30F1E5BD2310058E6CD</string>
-				<string>6E8DE3281E5BD2320058E6CD</string>
-				<string>6E8DE3331E5BD2320058E6CD</string>
-			</array>
-		</dict>
-		<key>6E8DE30B1E5BD2310058E6CD</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6E8DE33B1E5BD2320058E6CD</string>
-				<string>6E8DE33C1E5BD2320058E6CD</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6E8DE30C1E5BD2310058E6CD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6E8C5B121E6583D10058B122</string>
-				<string>6E4DC6C01E5FFC85000921E1</string>
-				<string>6E0F8C2A1E5D82F3000B7798</string>
-				<string>6E8DE38C1E5C19810058E6CD</string>
-				<string>6E8DE31B1E5BD2310058E6CD</string>
-				<string>6E4DC6C81E604450000921E1</string>
-				<string>6EC003981E64230000D82112</string>
-				<string>6E0F8C391E5D9218000B7798</string>
-				<string>6EFD859D1E5E80350086B7ED</string>
-				<string>6EFD85A01E5E81B30086B7ED</string>
-				<string>6E0F8C311E5D834A000B7798</string>
-				<string>6E0F8C301E5D834A000B7798</string>
-				<string>6E8DE3891E5BDFBC0058E6CD</string>
-				<string>6E7193D31E681FA400DE140E</string>
-				<string>6E8DE3181E5BD2310058E6CD</string>
-				<string>6E8DE3151E5BD2310058E6CD</string>
-				<string>6EFD85AF1E5EE5C50086B7ED</string>
-				<string>6EFD85A91E5E8FD40086B7ED</string>
-				<string>6EFD85AC1E5ECC680086B7ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6E8DE30D1E5BD2310058E6CD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F6AFF1FC2F0BCDA82560A744</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6E8DE30E1E5BD2310058E6CD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6E4DC6C91E604450000921E1</string>
-				<string>6E1903CE1E6CF4D30051C28C</string>
-				<string>6E4DC6C11E5FFC85000921E1</string>
-				<string>6E4DC6BC1E5FC3B1000921E1</string>
-				<string>6E8DE3201E5BD2310058E6CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6E8DE30F1E5BD2310058E6CD</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6E8DE33D1E5BD2320058E6CD</string>
-			<key>buildPhases</key>
-			<array>
-				<string>FE664B7CC8034632D04EFAC8</string>
-				<string>6E8DE30C1E5BD2310058E6CD</string>
-				<string>6E8DE30D1E5BD2310058E6CD</string>
-				<string>6E8DE30E1E5BD2310058E6CD</string>
-				<string>FFFCCB4962C66874D11730A6</string>
-				<string>37E363A216211B983F42792E</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BLBook</string>
-			<key>productName</key>
-			<string>BLBook</string>
-			<key>productReference</key>
-			<string>6E8DE3101E5BD2310058E6CD</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>6E8DE3101E5BD2310058E6CD</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>BLBook.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6E8DE3111E5BD2310058E6CD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6E8DE3101E5BD2310058E6CD</string>
-				<string>6E8DE3291E5BD2320058E6CD</string>
-				<string>6E8DE3341E5BD2320058E6CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3121E5BD2310058E6CD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6EFD85A61E5E8FAE0086B7ED</string>
-				<string>6EFD85A51E5E85BC0086B7ED</string>
-				<string>6E0F8C361E5D8388000B7798</string>
-				<string>6E0F8C351E5D8377000B7798</string>
-				<string>6E0F8C341E5D836B000B7798</string>
-				<string>6E0F8C331E5D8366000B7798</string>
-				<string>6E0F8C321E5D8355000B7798</string>
-				<string>6E0F8C271E5D8277000B7798</string>
-				<string>6E1903CD1E6CF4D30051C28C</string>
-				<string>6E8DE3131E5BD2310058E6CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BLBook</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3131E5BD2310058E6CD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6E8DE3141E5BD2310058E6CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3141E5BD2310058E6CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3151E5BD2310058E6CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E8DE3141E5BD2310058E6CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E8DE3161E5BD2310058E6CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3171E5BD2310058E6CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3181E5BD2310058E6CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E8DE3171E5BD2310058E6CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E8DE3191E5BD2310058E6CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MainViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE31A1E5BD2310058E6CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MainViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE31B1E5BD2310058E6CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E8DE31A1E5BD2310058E6CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E8DE31F1E5BD2310058E6CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3201E5BD2310058E6CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E8DE31F1E5BD2310058E6CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E8DE3241E5BD2310058E6CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3251E5BD2320058E6CD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6E8DE32E1E5BD2320058E6CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6E8DE3261E5BD2320058E6CD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6E8DE3271E5BD2320058E6CD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6E8DE3281E5BD2320058E6CD</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6E8DE3401E5BD2320058E6CD</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6E8DE3251E5BD2320058E6CD</string>
-				<string>6E8DE3261E5BD2320058E6CD</string>
-				<string>6E8DE3271E5BD2320058E6CD</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>6E8DE32B1E5BD2320058E6CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BLBookTests</string>
-			<key>productName</key>
-			<string>BLBookTests</string>
-			<key>productReference</key>
-			<string>6E8DE3291E5BD2320058E6CD</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>6E8DE3291E5BD2320058E6CD</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>BLBookTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6E8DE32A1E5BD2320058E6CD</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>6E8DE3081E5BD2310058E6CD</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>6E8DE30F1E5BD2310058E6CD</string>
-			<key>remoteInfo</key>
-			<string>BLBook</string>
-		</dict>
-		<key>6E8DE32B1E5BD2320058E6CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>6E8DE30F1E5BD2310058E6CD</string>
-			<key>targetProxy</key>
-			<string>6E8DE32A1E5BD2320058E6CD</string>
-		</dict>
-		<key>6E8DE32C1E5BD2320058E6CD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6E8DE32D1E5BD2320058E6CD</string>
-				<string>6E8DE32F1E5BD2320058E6CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BLBookTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE32D1E5BD2320058E6CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BLBookTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE32E1E5BD2320058E6CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E8DE32D1E5BD2320058E6CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E8DE32F1E5BD2320058E6CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3301E5BD2320058E6CD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6E8DE3391E5BD2320058E6CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6E8DE3311E5BD2320058E6CD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6E8DE3321E5BD2320058E6CD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6E8DE3331E5BD2320058E6CD</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6E8DE3431E5BD2320058E6CD</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6E8DE3301E5BD2320058E6CD</string>
-				<string>6E8DE3311E5BD2320058E6CD</string>
-				<string>6E8DE3321E5BD2320058E6CD</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>6E8DE3361E5BD2320058E6CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>BLBookUITests</string>
-			<key>productName</key>
-			<string>BLBookUITests</string>
-			<key>productReference</key>
-			<string>6E8DE3341E5BD2320058E6CD</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>6E8DE3341E5BD2320058E6CD</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>BLBookUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6E8DE3351E5BD2320058E6CD</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>6E8DE3081E5BD2310058E6CD</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>6E8DE30F1E5BD2310058E6CD</string>
-			<key>remoteInfo</key>
-			<string>BLBook</string>
-		</dict>
-		<key>6E8DE3361E5BD2320058E6CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>6E8DE30F1E5BD2310058E6CD</string>
-			<key>targetProxy</key>
-			<string>6E8DE3351E5BD2320058E6CD</string>
-		</dict>
-		<key>6E8DE3371E5BD2320058E6CD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6E8DE3381E5BD2320058E6CD</string>
-				<string>6E8DE33A1E5BD2320058E6CD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BLBookUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3381E5BD2320058E6CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BLBookUITests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3391E5BD2320058E6CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E8DE3381E5BD2320058E6CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E8DE33A1E5BD2320058E6CD</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE33B1E5BD2320058E6CD</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6E8DE33C1E5BD2320058E6CD</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6E8DE33D1E5BD2320058E6CD</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6E8DE33E1E5BD2320058E6CD</string>
-				<string>6E8DE33F1E5BD2320058E6CD</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6E8DE33E1E5BD2320058E6CD</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F6BBD405658B1D1141CF7C3D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>57WTDCG577</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>$(SRCROOT)/BLBook/BLBook.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BLBook/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.bacic5i5j.BLBook</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string></string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
-				<string>BLBook/BLBook-Bridging-Header.h</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6E8DE33F1E5BD2320058E6CD</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DA1D74B2D8BE94AF57A2C257</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>57WTDCG577</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>$(SRCROOT)/BLBook/BLBook.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BLBook/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.bacic5i5j.BLBook</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string></string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
-				<string>BLBook/BLBook-Bridging-Header.h</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6E8DE3401E5BD2320058E6CD</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6E8DE3411E5BD2320058E6CD</string>
-				<string>6E8DE3421E5BD2320058E6CD</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6E8DE3411E5BD2320058E6CD</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BLBookTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.bacic5i5j.BLBookTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/BLBook.app/BLBook</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6E8DE3421E5BD2320058E6CD</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BLBookTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.bacic5i5j.BLBookTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/BLBook.app/BLBook</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6E8DE3431E5BD2320058E6CD</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6E8DE3441E5BD2320058E6CD</string>
-				<string>6E8DE3451E5BD2320058E6CD</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6E8DE3441E5BD2320058E6CD</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BLBookUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.bacic5i5j.BLBookUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>BLBook</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6E8DE3451E5BD2320058E6CD</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>BLBookUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.bacic5i5j.BLBookUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>BLBook</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6E8DE3871E5BDFBC0058E6CD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BookViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3881E5BDFBC0058E6CD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BookViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE3891E5BDFBC0058E6CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E8DE3881E5BDFBC0058E6CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6E8DE38A1E5C19810058E6CD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FileUtil.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE38B1E5C19810058E6CD</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FileUtil.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6E8DE38C1E5C19810058E6CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6E8DE38B1E5C19810058E6CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6EC003961E64230000D82112</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BLDownloadView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EC003971E64230000D82112</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BLDownloadView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EC003981E64230000D82112</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6EC003971E64230000D82112</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6EFD859B1E5E80350086B7ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Book.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD859C1E5E80350086B7ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Book.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD859D1E5E80350086B7ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6EFD859C1E5E80350086B7ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6EFD859E1E5E81B30086B7ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AddBookViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD859F1E5E81B30086B7ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AddBookViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD85A01E5E81B30086B7ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6EFD859F1E5E81B30086B7ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6EFD85A11E5E83E00086B7ED</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BLBook.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD85A21E5E855E0086B7ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6EFD85A41E5E85B10086B7ED</string>
-				<string>6EFD85A31E5E85850086B7ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Header</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD85A31E5E85850086B7ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BLLog.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD85A41E5E85B10086B7ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Common.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD85A51E5E85BC0086B7ED</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>API</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD85A61E5E8FAE0086B7ED</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6EFD85A71E5E8FD40086B7ED</string>
-				<string>6EFD85A81E5E8FD40086B7ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Category</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD85A71E5E8FD40086B7ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSString+Util.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD85A81E5E8FD40086B7ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSString+Util.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD85A91E5E8FD40086B7ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6EFD85A81E5E8FD40086B7ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6EFD85AA1E5ECC680086B7ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BookView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD85AB1E5ECC680086B7ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BookView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD85AC1E5ECC680086B7ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6EFD85AB1E5ECC680086B7ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6EFD85AD1E5EE5C50086B7ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>BLNavigationController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD85AE1E5EE5C50086B7ED</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>BLNavigationController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EFD85AF1E5EE5C50086B7ED</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6EFD85AE1E5EE5C50086B7ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7B8F22CB9EDF8F8C3320A8C5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F6BBD405658B1D1141CF7C3D</string>
-				<string>DA1D74B2D8BE94AF57A2C257</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DA1D74B2D8BE94AF57A2C257</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-BLBook.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-BLBook/Pods-BLBook.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F6AFF1FC2F0BCDA82560A744</key>
-		<dict>
-			<key>fileRef</key>
-			<string>65CF75C5282B9514DFBE46E9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F6BBD405658B1D1141CF7C3D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-BLBook.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-BLBook/Pods-BLBook.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE664B7CC8034632D04EFAC8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>FFFCCB4962C66874D11730A6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-BLBook/Pods-BLBook-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>6E8DE3081E5BD2310058E6CD</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E0F8C2A1E5D82F3000B7798 /* BLBookParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F8C291E5D82F3000B7798 /* BLBookParser.m */; };
+		6E0F8C301E5D834A000B7798 /* BLDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F8C2D1E5D834A000B7798 /* BLDBHelper.m */; };
+		6E0F8C311E5D834A000B7798 /* BLDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F8C2F1E5D834A000B7798 /* BLDBModel.m */; };
+		6E0F8C391E5D9218000B7798 /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F8C381E5D9218000B7798 /* Chapter.m */; };
+		6E1903CE1E6CF4D30051C28C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E1903CD1E6CF4D30051C28C /* Images.xcassets */; };
+		6E4DC6BC1E5FC3B1000921E1 /* background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DC6BB1E5FC3B1000921E1 /* background.jpeg */; };
+		6E4DC6C01E5FFC85000921E1 /* BookListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4DC6BE1E5FFC85000921E1 /* BookListCell.m */; };
+		6E4DC6C11E5FFC85000921E1 /* BookListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DC6BF1E5FFC85000921E1 /* BookListCell.xib */; };
+		6E4DC6C81E604450000921E1 /* PageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4DC6C61E604450000921E1 /* PageViewCell.m */; };
+		6E4DC6C91E604450000921E1 /* PageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DC6C71E604450000921E1 /* PageViewCell.xib */; };
+		6E7193D31E681FA400DE140E /* BLToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7193D21E681FA400DE140E /* BLToolBarView.swift */; };
+		6E8C5B121E6583D10058B122 /* ChapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8C5B111E6583D10058B122 /* ChapterViewController.m */; };
+		6E8DE3151E5BD2310058E6CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE3141E5BD2310058E6CD /* main.m */; };
+		6E8DE3181E5BD2310058E6CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE3171E5BD2310058E6CD /* AppDelegate.m */; };
+		6E8DE31B1E5BD2310058E6CD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE31A1E5BD2310058E6CD /* MainViewController.m */; };
+		6E8DE3201E5BD2310058E6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E8DE31F1E5BD2310058E6CD /* Assets.xcassets */; };
+		6E8DE32E1E5BD2320058E6CD /* BLBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE32D1E5BD2320058E6CD /* BLBookTests.m */; };
+		6E8DE3391E5BD2320058E6CD /* BLBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE3381E5BD2320058E6CD /* BLBookUITests.m */; };
+		6E8DE3891E5BDFBC0058E6CD /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE3881E5BDFBC0058E6CD /* BookViewController.m */; };
+		6E8DE38C1E5C19810058E6CD /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE38B1E5C19810058E6CD /* FileUtil.m */; };
+		6EC003981E64230000D82112 /* BLDownloadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC003971E64230000D82112 /* BLDownloadView.m */; };
+		6EFD859D1E5E80350086B7ED /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD859C1E5E80350086B7ED /* Book.m */; };
+		6EFD85A01E5E81B30086B7ED /* AddBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD859F1E5E81B30086B7ED /* AddBookViewController.m */; };
+		6EFD85A91E5E8FD40086B7ED /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD85A81E5E8FD40086B7ED /* NSString+Util.m */; };
+		6EFD85AC1E5ECC680086B7ED /* BookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD85AB1E5ECC680086B7ED /* BookView.m */; };
+		6EFD85AF1E5EE5C50086B7ED /* BLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD85AE1E5EE5C50086B7ED /* BLNavigationController.m */; };
+		F6AFF1FC2F0BCDA82560A744 /* libPods-BLBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65CF75C5282B9514DFBE46E9 /* libPods-BLBook.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E8DE32A1E5BD2320058E6CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E8DE3081E5BD2310058E6CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E8DE30F1E5BD2310058E6CD;
+			remoteInfo = BLBook;
+		};
+		6E8DE3351E5BD2320058E6CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E8DE3081E5BD2310058E6CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E8DE30F1E5BD2310058E6CD;
+			remoteInfo = BLBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65CF75C5282B9514DFBE46E9 /* libPods-BLBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BLBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0F8C281E5D82F3000B7798 /* BLBookParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBookParser.h; sourceTree = "<group>"; };
+		6E0F8C291E5D82F3000B7798 /* BLBookParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBookParser.m; sourceTree = "<group>"; };
+		6E0F8C2C1E5D834A000B7798 /* BLDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDBHelper.h; sourceTree = "<group>"; };
+		6E0F8C2D1E5D834A000B7798 /* BLDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDBHelper.m; sourceTree = "<group>"; };
+		6E0F8C2E1E5D834A000B7798 /* BLDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDBModel.h; sourceTree = "<group>"; };
+		6E0F8C2F1E5D834A000B7798 /* BLDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDBModel.m; sourceTree = "<group>"; };
+		6E0F8C371E5D9218000B7798 /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
+		6E0F8C381E5D9218000B7798 /* Chapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter.m; sourceTree = "<group>"; };
+		6E1903CD1E6CF4D30051C28C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6E4DC6BB1E5FC3B1000921E1 /* background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpeg; sourceTree = "<group>"; };
+		6E4DC6BD1E5FFC85000921E1 /* BookListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListCell.h; sourceTree = "<group>"; };
+		6E4DC6BE1E5FFC85000921E1 /* BookListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListCell.m; sourceTree = "<group>"; };
+		6E4DC6BF1E5FFC85000921E1 /* BookListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookListCell.xib; sourceTree = "<group>"; };
+		6E4DC6C51E604450000921E1 /* PageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewCell.h; sourceTree = "<group>"; };
+		6E4DC6C61E604450000921E1 /* PageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewCell.m; sourceTree = "<group>"; };
+		6E4DC6C71E604450000921E1 /* PageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageViewCell.xib; sourceTree = "<group>"; };
+		6E7193CD1E67FB8600DE140E /* BLBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLBook-Bridging-Header.h"; sourceTree = "<group>"; };
+		6E7193D21E681FA400DE140E /* BLToolBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLToolBarView.swift; sourceTree = "<group>"; };
+		6E8C5B101E6583D10058B122 /* ChapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterViewController.h; sourceTree = "<group>"; };
+		6E8C5B111E6583D10058B122 /* ChapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterViewController.m; sourceTree = "<group>"; };
+		6E8DE3101E5BD2310058E6CD /* BLBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E8DE3141E5BD2310058E6CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E8DE3161E5BD2310058E6CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6E8DE3171E5BD2310058E6CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6E8DE3191E5BD2310058E6CD /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		6E8DE31A1E5BD2310058E6CD /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		6E8DE31F1E5BD2310058E6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E8DE3241E5BD2310058E6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E8DE3291E5BD2320058E6CD /* BLBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E8DE32D1E5BD2320058E6CD /* BLBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLBookTests.m; sourceTree = "<group>"; };
+		6E8DE32F1E5BD2320058E6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E8DE3341E5BD2320058E6CD /* BLBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E8DE3381E5BD2320058E6CD /* BLBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLBookUITests.m; sourceTree = "<group>"; };
+		6E8DE33A1E5BD2320058E6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E8DE3871E5BDFBC0058E6CD /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		6E8DE3881E5BDFBC0058E6CD /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		6E8DE38A1E5C19810058E6CD /* FileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
+		6E8DE38B1E5C19810058E6CD /* FileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
+		6EC003961E64230000D82112 /* BLDownloadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDownloadView.h; sourceTree = "<group>"; };
+		6EC003971E64230000D82112 /* BLDownloadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDownloadView.m; sourceTree = "<group>"; };
+		6EFD859B1E5E80350086B7ED /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		6EFD859C1E5E80350086B7ED /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		6EFD859E1E5E81B30086B7ED /* AddBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBookViewController.h; sourceTree = "<group>"; };
+		6EFD859F1E5E81B30086B7ED /* AddBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBookViewController.m; sourceTree = "<group>"; };
+		6EFD85A11E5E83E00086B7ED /* BLBook.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLBook.pch; sourceTree = "<group>"; };
+		6EFD85A31E5E85850086B7ED /* BLLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLog.h; sourceTree = "<group>"; };
+		6EFD85A41E5E85B10086B7ED /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		6EFD85A71E5E8FD40086B7ED /* NSString+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Util.h"; sourceTree = "<group>"; };
+		6EFD85A81E5E8FD40086B7ED /* NSString+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
+		6EFD85AA1E5ECC680086B7ED /* BookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookView.h; sourceTree = "<group>"; };
+		6EFD85AB1E5ECC680086B7ED /* BookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookView.m; sourceTree = "<group>"; };
+		6EFD85AD1E5EE5C50086B7ED /* BLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLNavigationController.h; sourceTree = "<group>"; };
+		6EFD85AE1E5EE5C50086B7ED /* BLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLNavigationController.m; sourceTree = "<group>"; };
+		DA1D74B2D8BE94AF57A2C257 /* Pods-BLBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLBook/Pods-BLBook.release.xcconfig"; sourceTree = "<group>"; };
+		F6BBD405658B1D1141CF7C3D /* Pods-BLBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLBook/Pods-BLBook.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E8DE30D1E5BD2310058E6CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AFF1FC2F0BCDA82560A744 /* libPods-BLBook.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8DE3261E5BD2320058E6CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8DE3311E5BD2320058E6CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B4B4D8047056DCC232FBCFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65CF75C5282B9514DFBE46E9 /* libPods-BLBook.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E0F8C271E5D8277000B7798 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6EFD85A21E5E855E0086B7ED /* Header */,
+				6E0F8C2B1E5D8337000B7798 /* BLDB */,
+				6E8DE38A1E5C19810058E6CD /* FileUtil.h */,
+				6E8DE38B1E5C19810058E6CD /* FileUtil.m */,
+				6E0F8C281E5D82F3000B7798 /* BLBookParser.h */,
+				6E0F8C291E5D82F3000B7798 /* BLBookParser.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		6E0F8C2B1E5D8337000B7798 /* BLDB */ = {
+			isa = PBXGroup;
+			children = (
+				6E0F8C2C1E5D834A000B7798 /* BLDBHelper.h */,
+				6E0F8C2D1E5D834A000B7798 /* BLDBHelper.m */,
+				6E0F8C2E1E5D834A000B7798 /* BLDBModel.h */,
+				6E0F8C2F1E5D834A000B7798 /* BLDBModel.m */,
+			);
+			name = BLDB;
+			sourceTree = "<group>";
+		};
+		6E0F8C321E5D8355000B7798 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E8DE3871E5BDFBC0058E6CD /* BookViewController.h */,
+				6E8DE3881E5BDFBC0058E6CD /* BookViewController.m */,
+				6E8DE3191E5BD2310058E6CD /* MainViewController.h */,
+				6E8DE31A1E5BD2310058E6CD /* MainViewController.m */,
+				6EFD859E1E5E81B30086B7ED /* AddBookViewController.h */,
+				6EFD859F1E5E81B30086B7ED /* AddBookViewController.m */,
+				6E8C5B101E6583D10058B122 /* ChapterViewController.h */,
+				6E8C5B111E6583D10058B122 /* ChapterViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6E0F8C331E5D8366000B7798 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6EFD85AA1E5ECC680086B7ED /* BookView.h */,
+				6EFD85AB1E5ECC680086B7ED /* BookView.m */,
+				6E4DC6BD1E5FFC85000921E1 /* BookListCell.h */,
+				6E4DC6BE1E5FFC85000921E1 /* BookListCell.m */,
+				6E4DC6BF1E5FFC85000921E1 /* BookListCell.xib */,
+				6E4DC6C51E604450000921E1 /* PageViewCell.h */,
+				6E4DC6C61E604450000921E1 /* PageViewCell.m */,
+				6E4DC6C71E604450000921E1 /* PageViewCell.xib */,
+				6EC003961E64230000D82112 /* BLDownloadView.h */,
+				6EC003971E64230000D82112 /* BLDownloadView.m */,
+				6E7193D21E681FA400DE140E /* BLToolBarView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6E0F8C341E5D836B000B7798 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E0F8C371E5D9218000B7798 /* Chapter.h */,
+				6E0F8C381E5D9218000B7798 /* Chapter.m */,
+				6EFD859B1E5E80350086B7ED /* Book.h */,
+				6EFD859C1E5E80350086B7ED /* Book.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6E0F8C351E5D8377000B7798 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6E8DE3161E5BD2310058E6CD /* AppDelegate.h */,
+				6E8DE3171E5BD2310058E6CD /* AppDelegate.m */,
+				6EFD85A11E5E83E00086B7ED /* BLBook.pch */,
+				6EFD85AD1E5EE5C50086B7ED /* BLNavigationController.h */,
+				6EFD85AE1E5EE5C50086B7ED /* BLNavigationController.m */,
+				6E7193CD1E67FB8600DE140E /* BLBook-Bridging-Header.h */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		6E0F8C361E5D8388000B7798 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6E4DC6BB1E5FC3B1000921E1 /* background.jpeg */,
+				6E8DE31F1E5BD2310058E6CD /* Assets.xcassets */,
+				6E8DE3241E5BD2310058E6CD /* Info.plist */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		6E8DE3071E5BD2310058E6CD = {
+			isa = PBXGroup;
+			children = (
+				6E8DE3121E5BD2310058E6CD /* BLBook */,
+				6E8DE32C1E5BD2320058E6CD /* BLBookTests */,
+				6E8DE3371E5BD2320058E6CD /* BLBookUITests */,
+				6E8DE3111E5BD2310058E6CD /* Products */,
+				7B8F22CB9EDF8F8C3320A8C5 /* Pods */,
+				3B4B4D8047056DCC232FBCFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6E8DE3111E5BD2310058E6CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E8DE3101E5BD2310058E6CD /* BLBook.app */,
+				6E8DE3291E5BD2320058E6CD /* BLBookTests.xctest */,
+				6E8DE3341E5BD2320058E6CD /* BLBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E8DE3121E5BD2310058E6CD /* BLBook */ = {
+			isa = PBXGroup;
+			children = (
+				6EFD85A61E5E8FAE0086B7ED /* Category */,
+				6EFD85A51E5E85BC0086B7ED /* API */,
+				6E0F8C361E5D8388000B7798 /* Resource */,
+				6E0F8C351E5D8377000B7798 /* Application */,
+				6E0F8C341E5D836B000B7798 /* Models */,
+				6E0F8C331E5D8366000B7798 /* Views */,
+				6E0F8C321E5D8355000B7798 /* Controllers */,
+				6E0F8C271E5D8277000B7798 /* Utils */,
+				6E1903CD1E6CF4D30051C28C /* Images.xcassets */,
+				6E8DE3131E5BD2310058E6CD /* Supporting Files */,
+			);
+			path = BLBook;
+			sourceTree = "<group>";
+		};
+		6E8DE3131E5BD2310058E6CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E8DE3141E5BD2310058E6CD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E8DE32C1E5BD2320058E6CD /* BLBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E8DE32D1E5BD2320058E6CD /* BLBookTests.m */,
+				6E8DE32F1E5BD2320058E6CD /* Info.plist */,
+			);
+			path = BLBookTests;
+			sourceTree = "<group>";
+		};
+		6E8DE3371E5BD2320058E6CD /* BLBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E8DE3381E5BD2320058E6CD /* BLBookUITests.m */,
+				6E8DE33A1E5BD2320058E6CD /* Info.plist */,
+			);
+			path = BLBookUITests;
+			sourceTree = "<group>";
+		};
+		6EFD85A21E5E855E0086B7ED /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				6EFD85A41E5E85B10086B7ED /* Common.h */,
+				6EFD85A31E5E85850086B7ED /* BLLog.h */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		6EFD85A51E5E85BC0086B7ED /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		6EFD85A61E5E8FAE0086B7ED /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6EFD85A71E5E8FD40086B7ED /* NSString+Util.h */,
+				6EFD85A81E5E8FD40086B7ED /* NSString+Util.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		7B8F22CB9EDF8F8C3320A8C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6BBD405658B1D1141CF7C3D /* Pods-BLBook.debug.xcconfig */,
+				DA1D74B2D8BE94AF57A2C257 /* Pods-BLBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E8DE30F1E5BD2310058E6CD /* BLBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E8DE33D1E5BD2320058E6CD /* Build configuration list for PBXNativeTarget "BLBook" */;
+			buildPhases = (
+				FE664B7CC8034632D04EFAC8 /* [CP] Check Pods Manifest.lock */,
+				6E8DE30C1E5BD2310058E6CD /* Sources */,
+				6E8DE30D1E5BD2310058E6CD /* Frameworks */,
+				6E8DE30E1E5BD2310058E6CD /* Resources */,
+				FFFCCB4962C66874D11730A6 /* [CP] Embed Pods Frameworks */,
+				37E363A216211B983F42792E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLBook;
+			productName = BLBook;
+			productReference = 6E8DE3101E5BD2310058E6CD /* BLBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E8DE3281E5BD2320058E6CD /* BLBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E8DE3401E5BD2320058E6CD /* Build configuration list for PBXNativeTarget "BLBookTests" */;
+			buildPhases = (
+				6E8DE3251E5BD2320058E6CD /* Sources */,
+				6E8DE3261E5BD2320058E6CD /* Frameworks */,
+				6E8DE3271E5BD2320058E6CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E8DE32B1E5BD2320058E6CD /* PBXTargetDependency */,
+			);
+			name = BLBookTests;
+			productName = BLBookTests;
+			productReference = 6E8DE3291E5BD2320058E6CD /* BLBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E8DE3331E5BD2320058E6CD /* BLBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E8DE3431E5BD2320058E6CD /* Build configuration list for PBXNativeTarget "BLBookUITests" */;
+			buildPhases = (
+				6E8DE3301E5BD2320058E6CD /* Sources */,
+				6E8DE3311E5BD2320058E6CD /* Frameworks */,
+				6E8DE3321E5BD2320058E6CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E8DE3361E5BD2320058E6CD /* PBXTargetDependency */,
+			);
+			name = BLBookUITests;
+			productName = BLBookUITests;
+			productReference = 6E8DE3341E5BD2320058E6CD /* BLBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E8DE3081E5BD2310058E6CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = 5i5j;
+				TargetAttributes = {
+					6E8DE30F1E5BD2310058E6CD = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 57WTDCG577;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
+					};
+					6E8DE3281E5BD2320058E6CD = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6E8DE30F1E5BD2310058E6CD;
+					};
+					6E8DE3331E5BD2320058E6CD = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6E8DE30F1E5BD2310058E6CD;
+					};
+				};
+			};
+			buildConfigurationList = 6E8DE30B1E5BD2310058E6CD /* Build configuration list for PBXProject "BLBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E8DE3071E5BD2310058E6CD;
+			productRefGroup = 6E8DE3111E5BD2310058E6CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E8DE30F1E5BD2310058E6CD /* BLBook */,
+				6E8DE3281E5BD2320058E6CD /* BLBookTests */,
+				6E8DE3331E5BD2320058E6CD /* BLBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E8DE30E1E5BD2310058E6CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4DC6C91E604450000921E1 /* PageViewCell.xib in Resources */,
+				6E1903CE1E6CF4D30051C28C /* Images.xcassets in Resources */,
+				6E4DC6C11E5FFC85000921E1 /* BookListCell.xib in Resources */,
+				6E4DC6BC1E5FC3B1000921E1 /* background.jpeg in Resources */,
+				6E8DE3201E5BD2310058E6CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8DE3271E5BD2320058E6CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8DE3321E5BD2320058E6CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37E363A216211B983F42792E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLBook/Pods-BLBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE664B7CC8034632D04EFAC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFFCCB4962C66874D11730A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLBook/Pods-BLBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E8DE30C1E5BD2310058E6CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E8C5B121E6583D10058B122 /* ChapterViewController.m in Sources */,
+				6E4DC6C01E5FFC85000921E1 /* BookListCell.m in Sources */,
+				6E0F8C2A1E5D82F3000B7798 /* BLBookParser.m in Sources */,
+				6E8DE38C1E5C19810058E6CD /* FileUtil.m in Sources */,
+				6E8DE31B1E5BD2310058E6CD /* MainViewController.m in Sources */,
+				6E4DC6C81E604450000921E1 /* PageViewCell.m in Sources */,
+				6EC003981E64230000D82112 /* BLDownloadView.m in Sources */,
+				6E0F8C391E5D9218000B7798 /* Chapter.m in Sources */,
+				6EFD859D1E5E80350086B7ED /* Book.m in Sources */,
+				6EFD85A01E5E81B30086B7ED /* AddBookViewController.m in Sources */,
+				6E0F8C311E5D834A000B7798 /* BLDBModel.m in Sources */,
+				6E0F8C301E5D834A000B7798 /* BLDBHelper.m in Sources */,
+				6E8DE3891E5BDFBC0058E6CD /* BookViewController.m in Sources */,
+				6E7193D31E681FA400DE140E /* BLToolBarView.swift in Sources */,
+				6E8DE3181E5BD2310058E6CD /* AppDelegate.m in Sources */,
+				6E8DE3151E5BD2310058E6CD /* main.m in Sources */,
+				6EFD85AF1E5EE5C50086B7ED /* BLNavigationController.m in Sources */,
+				6EFD85A91E5E8FD40086B7ED /* NSString+Util.m in Sources */,
+				6EFD85AC1E5ECC680086B7ED /* BookView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8DE3251E5BD2320058E6CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E8DE32E1E5BD2320058E6CD /* BLBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8DE3301E5BD2320058E6CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E8DE3391E5BD2320058E6CD /* BLBookUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E8DE32B1E5BD2320058E6CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E8DE30F1E5BD2310058E6CD /* BLBook */;
+			targetProxy = 6E8DE32A1E5BD2320058E6CD /* PBXContainerItemProxy */;
+		};
+		6E8DE3361E5BD2320058E6CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E8DE30F1E5BD2310058E6CD /* BLBook */;
+			targetProxy = 6E8DE3351E5BD2320058E6CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6E8DE33B1E5BD2320058E6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E8DE33C1E5BD2320058E6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E8DE33E1E5BD2320058E6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6BBD405658B1D1141CF7C3D /* Pods-BLBook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiaoxin wang (BU82NWZ688)";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 57WTDCG577;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BLBook/BLBook.pch";
+				INFOPLIST_FILE = BLBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bacic5i5j.BLBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c11ae352-3747-4389-a08a-ebd7027d4242";
+				PROVISIONING_PROFILE_SPECIFIER = BLBookDevPro;
+				SWIFT_OBJC_BRIDGING_HEADER = "BLBook/BLBook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6E8DE33F1E5BD2320058E6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1D74B2D8BE94AF57A2C257 /* Pods-BLBook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: xiaoxin wang (57WTDCG577)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 57WTDCG577;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BLBook/BLBook.pch";
+				INFOPLIST_FILE = BLBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bacic5i5j.BLBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8310e152-9713-4dd8-8b71-1b09d97a7e5f";
+				PROVISIONING_PROFILE_SPECIFIER = BLBookAdPro;
+				SWIFT_OBJC_BRIDGING_HEADER = "BLBook/BLBook-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6E8DE3411E5BD2320058E6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BLBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bacic5i5j.BLBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLBook.app/BLBook";
+			};
+			name = Debug;
+		};
+		6E8DE3421E5BD2320058E6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BLBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bacic5i5j.BLBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLBook.app/BLBook";
+			};
+			name = Release;
+		};
+		6E8DE3441E5BD2320058E6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = BLBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bacic5i5j.BLBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BLBook;
+			};
+			name = Debug;
+		};
+		6E8DE3451E5BD2320058E6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = BLBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bacic5i5j.BLBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BLBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E8DE30B1E5BD2310058E6CD /* Build configuration list for PBXProject "BLBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E8DE33B1E5BD2320058E6CD /* Debug */,
+				6E8DE33C1E5BD2320058E6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E8DE33D1E5BD2320058E6CD /* Build configuration list for PBXNativeTarget "BLBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E8DE33E1E5BD2320058E6CD /* Debug */,
+				6E8DE33F1E5BD2320058E6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E8DE3401E5BD2320058E6CD /* Build configuration list for PBXNativeTarget "BLBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E8DE3411E5BD2320058E6CD /* Debug */,
+				6E8DE3421E5BD2320058E6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E8DE3431E5BD2320058E6CD /* Build configuration list for PBXNativeTarget "BLBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E8DE3441E5BD2320058E6CD /* Debug */,
+				6E8DE3451E5BD2320058E6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E8DE3081E5BD2310058E6CD /* Project object */;
+}
