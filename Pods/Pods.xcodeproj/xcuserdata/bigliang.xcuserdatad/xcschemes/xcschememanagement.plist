@@ -4,47 +4,47 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AFNetworking.xcscheme</key>
+		<key>AFNetworking.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CocoaLumberjack.xcscheme</key>
+		<key>CocoaLumberjack.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FBRetainCycleDetector.xcscheme</key>
+		<key>FBRetainCycleDetector.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FMDB.xcscheme</key>
+		<key>FMDB.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>MLeaksFinder.xcscheme</key>
+		<key>MLeaksFinder.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Masonry.xcscheme</key>
+		<key>Masonry.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-BLBook.xcscheme</key>
+		<key>Pods-BLBook.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SSZipArchive.xcscheme</key>
+		<key>SSZipArchive.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Toast.xcscheme</key>
+		<key>Toast.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
