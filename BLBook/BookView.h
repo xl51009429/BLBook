@@ -31,4 +31,6 @@ typedef NS_ENUM(NSUInteger, BLBookViewEvent) {
 
 - (void)ParserChapterToPage;
 
+- (void)changeCurrentPageTextColor;
+
 @end

@@ -92,7 +92,7 @@ static NSInteger lineNumsOfPage = 0;
     CTFrameRef frame = CTFramesetterCreateFrame(frameSetter, CFRangeMake(0, 0), path, NULL);
     NSArray *lines = (__bridge NSArray *)CTFrameGetLines(frame);
     NSArray *returnArray = [self operateLines:lines attStr:attStr];
-    //coretext对象需要手动释放
+    //core text对象需要手动释放
     CFRelease(frameSetter);
     CFRelease(path);
     CFRelease(frame);
@@ -124,14 +124,21 @@ static NSInteger lineNumsOfPage = 0;
 
 + (NSInteger)lineNums
 {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        UILabel *label = [[UILabel alloc]init];
-        label.text = @"我";
-        label.font = [UIFont systemFontOfSize:20];
-        lineNumsOfPage = (kScreenHeight - kPadding * 2) / (kBLLineHeight + label.intrinsicContentSize.height);
-    });
     return lineNumsOfPage;
+}
+
++ (void)setLineNums
+{
+    UILabel *label = [[UILabel alloc]init];
+    label.text = @"我";
+    NSInteger fontSize = [[NSUserDefaults standardUserDefaults] integerForKey:@"FontSize"];
+    if (fontSize == 0) {
+        label.font = [UIFont systemFontOfSize:kFontSizeNormal];
+    }else{
+        label.font = [UIFont systemFontOfSize:fontSize];
+    }
+    lineNumsOfPage = (kScreenHeight - kPadding * 2) / (kBLLineHeight + label.intrinsicContentSize.height);
+    NSLog(@"%ld",lineNumsOfPage);
 }
 
 @end

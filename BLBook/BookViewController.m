@@ -11,12 +11,15 @@
 #import "Chapter.h"
 #import "ChapterViewController.h"
 #import "BLBook-Swift.h"
+#import "BLBookParser.h"
 
 @interface BookViewController ()<BookViewDelegate,ChapterViewControllerDelegate,BLToolBarViewDelegate>
 
 @property (nonatomic, strong)BookView                  *bookView;
 @property (nonatomic, strong)UIImageView               *backView;
 @property (nonatomic, strong)BLToolBarView             *toolBar;
+@property (nonatomic, assign)ToolBarButtonTag           FontTag;
+@property (nonatomic, assign)ToolBarButtonTag           ThemeTag;
 
 @end
 
@@ -24,10 +27,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initUI];
+    [self bl_initUI];
+    [self bl_initData];
 }
 
-- (void)initUI
+- (void)bl_initUI
 {
     self.view.backgroundColor = [UIColor redColor];
 
@@ -65,7 +69,40 @@
     [self.view addSubview:self.bookView];
     [self.view addSubview:self.toolBar];
     
+    NSString *themeName = [[NSUserDefaults standardUserDefaults] stringForKey:@"Theme"];
+    if (!themeName || [themeName isEqualToString: @"day"]) {
+        self.bookView.backgroundColor = [UIColor clearColor];
+    }else{
+        self.bookView.backgroundColor = [UIColor blackColor];
+    }
+}
+
+- (void)bl_initData
+{
+    [BLBookParser setLineNums];
     [self setChapterContent];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeFontSize:) name:@"bl_changeFontSize" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeTheme:) name:@"bl_changeTheme" object:nil];
+}
+
+- (void)changeFontSize:(NSNotification *)info
+{
+    [[NSUserDefaults standardUserDefaults]setObject:info.userInfo[@"FontSize"] forKey:@"FontSize"];
+    [BLBookParser setLineNums];
+    [self.bookView ParserChapterToPage];
+}
+
+- (void)changeTheme:(NSNotification *)info
+{
+    [[NSUserDefaults standardUserDefaults]setObject:info.userInfo[@"Theme"] forKey:@"Theme"];
+    NSString *themeName = info.userInfo[@"Theme"];
+    if ([themeName isEqualToString: @"day"]) {
+        self.bookView.backgroundColor = [UIColor clearColor];
+    }else{
+        self.bookView.backgroundColor = [UIColor blackColor];
+    }
+    [self.bookView changeCurrentPageTextColor];
 }
 
 - (void)showAndDissmisToolBar
@@ -165,24 +202,29 @@
 {
     switch (index) {
         case ToolBarButtonTagSmall:
-            NSLog(@"11");
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeFontSize" object:nil userInfo:@{@"FontSize":@(kFontSizeSmall)}];
             break;
         case ToolBarButtonTagNormal:
-            NSLog(@"22");
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeFontSize" object:nil userInfo:@{@"FontSize":@(kFontSizeNormal)}];
             break;
         case ToolBarButtonTagBig:
-            
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeFontSize" object:nil userInfo:@{@"FontSize":@(kFontSizeBig)}];
             break;
         case ToolBarButtonTagDay:
-            
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeTheme" object:nil userInfo:@{@"Theme":@"day"}];
             break;
         case ToolBarButtonTagNight:
-            
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeTheme" object:nil userInfo:@{@"Theme":@"night"}];
             break;
             
         default:
             break;
     }
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
 }
 
 @end

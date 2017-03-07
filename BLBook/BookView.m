@@ -103,7 +103,13 @@
 {
     NSMutableParagraphStyle *paraStyle = [[NSMutableParagraphStyle alloc] init];
     paraStyle.lineSpacing = kBLLineHeight;
-    NSDictionary *dic =@{NSFontAttributeName:[UIFont systemFontOfSize:20],NSParagraphStyleAttributeName:paraStyle,NSStrokeColorAttributeName:[UIColor darkGrayColor]};
+    NSInteger fontSize;
+    if ([[NSUserDefaults standardUserDefaults] integerForKey:@"FontSize"] == 0) {
+        fontSize = kFontSizeNormal;
+    }else{
+        fontSize = [[NSUserDefaults standardUserDefaults] integerForKey:@"FontSize"];
+    }
+    NSDictionary *dic =@{NSFontAttributeName:[UIFont systemFontOfSize:fontSize],NSParagraphStyleAttributeName:paraStyle,NSStrokeColorAttributeName:[UIColor darkGrayColor]};
     NSAttributedString *attStr = [[NSAttributedString alloc] initWithString:content attributes:dic];
     NSArray *arr = [BLBookParser breakUpToPageFromContent:attStr];
     return arr;
@@ -153,6 +159,22 @@
     _lastPage = _currentPage;
 }
 
+- (void)changeCurrentPageTextColor
+{
+    PageViewCell *cell = [[self.collectionView visibleCells] firstObject];
+    [self changeTextColor:cell];
+}
+
+- (void)changeTextColor:(PageViewCell *)cell
+{
+    NSString *theme = [[NSUserDefaults standardUserDefaults]stringForKey:@"Theme"];
+    if (!theme || [theme isEqualToString:@"day"]) {
+        cell.textLabel.textColor = [UIColor darkGrayColor];
+    }else{
+        cell.textLabel.textColor = UIColorFromRGB(0x8B7D7B);
+    }
+}
+
 #pragma mark - delegate
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -164,6 +186,7 @@
 {
     PageViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PageViewCellId" forIndexPath:indexPath];
     cell.textLabel.attributedText = self.dataSource[indexPath.row] ;
+    [self changeTextColor:cell];
     return cell;
 }
 

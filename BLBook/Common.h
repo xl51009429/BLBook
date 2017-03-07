@@ -55,6 +55,11 @@
 
 #define kRedColor        0xA20E15
 
+//字体大小
+#define kFontSizeNormal 19
+#define kFontSizeBig 21
+#define kFontSizeSmall 17
+
 
 /////////////////////////// 常用全局
 

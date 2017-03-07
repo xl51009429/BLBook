@@ -30,4 +30,6 @@
  */
 + (nonnull NSArray *)breakUpToPageFromContent:(nonnull NSAttributedString *)attStr;
 
++ (void)setLineNums;
+
 @end
