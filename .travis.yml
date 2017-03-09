@@ -1,1 +1,26 @@
 language: objective-c
+
+env:
+  global:
+  - APP_NAME="BLBook"
+  - 'DEVELOPER_NAME="iPhone Distribution: {bigliang}"'
+  - PROFILE_NAME="BLBookAdPro"
+  - secure: aCClWIxUTYe0oP7ZS8KCogfcsxo4DyPy0w/Bm9Il0iPRuxGro2gF+2YnJ3wnczz+bctKBj6Grh7XrzGcWgZEF6FvAeabXpg68ZhCH2yii5YSK0ihUxVplybFGIaxwGNAbOjRGI1kG8eLHQuBmIIJyUfgfkZjc1s0RSX2WeMbmL9J3dj6hOHN7X69sJ4j0IXoJwu5hg9HrAOs3V62accpssTL7g3chUHIvc3K2CFl6qnUvygPY3/7guPxTaf2sDWLytH56iCFP1wY5Qz6u5JBQS7xPH2Ce1YBeqw36QHDyxDsEZcVEh9TOr15URIiSdWh2+4H58LflNBRSUzvvyo3JLrK1RDh12eRdK/Puffg2mp5ak29cgRxhQQSt36LpmeHRBqD27y9JUIO4w2R0u/nScQfo3nEhD0mEwuKjDCh/csHVcua/W5ejhGh6WfVBRZWHHcYSMlo6P/CrGTb5FLIpvGoa402WDNv6pPPDc8jcxph0l4lSWLtuuIofrKhZWqLTeJl4McCdV0pSCwbi0AFBv/h3yTdMT+SXUc78ajQjD/OikZbwscbNfKtgkQWUv7zUhFhsYClmpCWFMvmIw6KVp/JYZrGd+jc8XIl/lrDksd/sU45bBtSA8recITuh5L50qbumhj4sorj8LaIbGrGu/mh8C0GGk+x7iCAOhAi9hQ=
+  - secure: HvuqiDnJRHHQ8YqY2loI7yAPmAmfMyAWVQpg0lDC+LeqJIdO4opTMZXBJtfvkAX82H8bakjrNbCOjGw348qxMwfd0LVHea57MCEQb0QD92521WahF+T24VAXIlji61hT2M+2p6FCuo7axt5h32a+sxJKYRztRYP+4DAwN8ZzdwvwtVw9QzdoJEkJC6lIZ4an1GX33pQtleJ8xEWbnPKMewwfs0ayafvSxj9U+qvHb94+7AFOoUdA3bQgD8jfEVok2/RZqBONhbzLW1s//nDjElCWzmdB88VTP3mmS8mixPEEymYWubEkSwpNyK3AO186ePriOmjSR14Oy6xQw7iTom3P6sVvSn7cd6PupoVxiVObbQiJO430ao5pzRG0DjcRey8whCRiTRbgghz64WsgTf99sRiaHYbhnXC0AYVEVkLXFE+7FT3ER7QfkseOC3LdH+Up24mL5qA4ELmgmTqDcE2FIsYvGaGTd46jso7vuDf9r8kOxxxvEgFQF+EdwBCvSZjopyYhonJAbKU+RDybJuPxzHcySMjqLGOZJi+PV/gNCeFfF8LWKbTLOfYm6y/iHUc64NVmc3AaVL5QVUj0MafrsPSdXfc3Jg/iNiDQ+wwNF/wI20V0dTFV35lNktCf+PxbY8TQQiw7GSPa2suMiKHbgmXF2r6BD+yIPMYGxxo=
+
+before_script:
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/$PROFILE_NAME.mobileprovision.enc
+  -d -a -out scripts/profile/$PROFILE_NAME.mobileprovision
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a
+  -out scripts/certs/dist.cer
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a
+  -out scripts/certs/dist.p12
+- "./scripts/add-key.sh"
+script:
+- xctool -workspace $APP_NAME.xcworkspace -scheme $APP_NAME -sdk iphoneos  -configuration
+  Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="$DEVELOPER_NAME"
+
+after_success:
+- "./scripts/sign-and-upload.sh"
+after_script:
+- "./scripts/remove-key.sh"
