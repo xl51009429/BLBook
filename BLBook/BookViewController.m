@@ -10,16 +10,16 @@
 #import "BookView.h"
 #import "Chapter.h"
 #import "ChapterViewController.h"
-#import "BLBook-Swift.h"
+//#import "BLBook-Swift.h"
 #import "BLBookParser.h"
 
-@interface BookViewController ()<BookViewDelegate,ChapterViewControllerDelegate,BLToolBarViewDelegate>
+@interface BookViewController ()<BookViewDelegate,ChapterViewControllerDelegate>
 
 @property (nonatomic, strong)BookView                  *bookView;
 @property (nonatomic, strong)UIImageView               *backView;
-@property (nonatomic, strong)BLToolBarView             *toolBar;
-@property (nonatomic, assign)ToolBarButtonTag           FontTag;
-@property (nonatomic, assign)ToolBarButtonTag           ThemeTag;
+//@property (nonatomic, strong)BLToolBarView             *toolBar;
+//@property (nonatomic, assign)ToolBarButtonTag           FontTag;
+//@property (nonatomic, assign)ToolBarButtonTag           ThemeTag;
 
 @end
 
@@ -58,16 +58,16 @@
         imageView;
     });
     
-    self.toolBar = ({
-        BLToolBarView *view = [[BLToolBarView alloc]initWithFrame:CGRectMake(0, kScreenHeight, kScreenWidth, 44)];
-        view.delegate = self;
-        view.backgroundColor = UIColorFromRGB(0xA20E15);
-        view;
-    });
+//    self.toolBar = ({
+//        BLToolBarView *view = [[BLToolBarView alloc]initWithFrame:CGRectMake(0, kScreenHeight, kScreenWidth, 44)];
+//        view.delegate = self;
+//        view.backgroundColor = UIColorFromRGB(0xA20E15);
+//        view;
+//    });
     
     [self.view addSubview:self.backView];
     [self.view addSubview:self.bookView];
-    [self.view addSubview:self.toolBar];
+    //[self.view addSubview:self.toolBar];
     
     NSString *themeName = [[NSUserDefaults standardUserDefaults] stringForKey:@"Theme"];
     if (!themeName || [themeName isEqualToString: @"day"]) {
@@ -105,20 +105,20 @@
     [self.bookView changeCurrentPageTextColor];
 }
 
-- (void)showAndDissmisToolBar
-{
-    @weakify(self)
-    [UIView animateWithDuration:0.2 animations:^{
-        @strongify(self)
-        if (self.toolBar.frame.origin.y == kScreenHeight) {
-            CGRect newFrame = CGRectMake(self.toolBar.frame.origin.x, kScreenHeight - self.toolBar.frame.size.height, self.toolBar.frame.size.width, self.toolBar.frame.size.height);
-            self.toolBar.frame = newFrame;
-        }else{
-            CGRect newFrame = CGRectMake(self.toolBar.frame.origin.x, kScreenHeight, self.toolBar.frame.size.width, self.toolBar.frame.size.height);
-            self.toolBar.frame = newFrame;
-        }
-    }];
-}
+//- (void)showAndDissmisToolBar
+//{
+//    @weakify(self)
+//    [UIView animateWithDuration:0.2 animations:^{
+//        @strongify(self)
+//        if (self.toolBar.frame.origin.y == kScreenHeight) {
+//            CGRect newFrame = CGRectMake(self.toolBar.frame.origin.x, kScreenHeight - self.toolBar.frame.size.height, self.toolBar.frame.size.width, self.toolBar.frame.size.height);
+//            self.toolBar.frame = newFrame;
+//        }else{
+//            CGRect newFrame = CGRectMake(self.toolBar.frame.origin.x, kScreenHeight, self.toolBar.frame.size.width, self.toolBar.frame.size.height);
+//            self.toolBar.frame = newFrame;
+//        }
+//    }];
+//}
 
 - (void)setChapterContent
 {
@@ -162,7 +162,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     //[[UIApplication sharedApplication] setStatusBarHidden:YES];
-    self.toolBar.frame = CGRectMake(self.toolBar.frame.origin.x, kScreenHeight, self.toolBar.frame.size.width, self.toolBar.frame.size.height);
+    //self.toolBar.frame = CGRectMake(self.toolBar.frame.origin.x, kScreenHeight, self.toolBar.frame.size.width, self.toolBar.frame.size.height);
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
@@ -179,7 +179,7 @@
     if (event  == BLBookViewEventTouchCenter) {
         //[[UIApplication sharedApplication] setStatusBarHidden:![UIApplication sharedApplication].statusBarHidden];
         [self.navigationController setNavigationBarHidden:!self.navigationController.navigationBarHidden animated:YES];
-        [self showAndDissmisToolBar];
+        //[self showAndDissmisToolBar];
     }else{
         NSInteger currentPage = [[NSUserDefaults standardUserDefaults] integerForKey:self.book.name];
         [[NSUserDefaults standardUserDefaults] setInteger:event == BLBookViewEventNextChapter?currentPage + 1:currentPage - 1 forKey:self.book.name];
@@ -198,29 +198,29 @@
 
 #pragma mark - BLToolBarView's Delegate
 
-- (void)didSelectWithToolBarView:(BLToolBarView *)toolBar index:(NSInteger)index
-{
-    switch (index) {
-        case ToolBarButtonTagSmall:
-            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeFontSize" object:nil userInfo:@{@"FontSize":@(kFontSizeSmall)}];
-            break;
-        case ToolBarButtonTagNormal:
-            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeFontSize" object:nil userInfo:@{@"FontSize":@(kFontSizeNormal)}];
-            break;
-        case ToolBarButtonTagBig:
-            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeFontSize" object:nil userInfo:@{@"FontSize":@(kFontSizeBig)}];
-            break;
-        case ToolBarButtonTagDay:
-            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeTheme" object:nil userInfo:@{@"Theme":@"day"}];
-            break;
-        case ToolBarButtonTagNight:
-            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeTheme" object:nil userInfo:@{@"Theme":@"night"}];
-            break;
-            
-        default:
-            break;
-    }
-}
+//- (void)didSelectWithToolBarView:(BLToolBarView *)toolBar index:(NSInteger)index
+//{
+//    switch (index) {
+//        case ToolBarButtonTagSmall:
+//            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeFontSize" object:nil userInfo:@{@"FontSize":@(kFontSizeSmall)}];
+//            break;
+//        case ToolBarButtonTagNormal:
+//            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeFontSize" object:nil userInfo:@{@"FontSize":@(kFontSizeNormal)}];
+//            break;
+//        case ToolBarButtonTagBig:
+//            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeFontSize" object:nil userInfo:@{@"FontSize":@(kFontSizeBig)}];
+//            break;
+//        case ToolBarButtonTagDay:
+//            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeTheme" object:nil userInfo:@{@"Theme":@"day"}];
+//            break;
+//        case ToolBarButtonTagNight:
+//            [[NSNotificationCenter defaultCenter]postNotificationName:@"bl_changeTheme" object:nil userInfo:@{@"Theme":@"night"}];
+//            break;
+//            
+//        default:
+//            break;
+//    }
+//}
 
 - (void)dealloc
 {
