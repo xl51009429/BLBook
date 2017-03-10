@@ -138,7 +138,7 @@ static NSInteger lineNumsOfPage = 0;
         label.font = [UIFont systemFontOfSize:fontSize];
     }
     lineNumsOfPage = (kScreenHeight - kPadding * 2) / (kBLLineHeight + label.intrinsicContentSize.height);
-    NSLog(@"%ld",lineNumsOfPage);
+    //NSLog(@"%ld",lineNumsOfPage);
 }
 
 @end
