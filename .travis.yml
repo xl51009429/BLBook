@@ -1,4 +1,6 @@
 language: objective-c
+osx_image: xcode8.1
+
 env:
   global:
   - APP_NAME="BLBook"
