@@ -20,7 +20,7 @@ before_script:
   - ./scripts/add-key.sh
 script:
 #- xctool -workspace BLBook.xcworkspace -scheme BLBook -sdk iphoneos  -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="$DEVELOPER_NAME"
-- travis_wait 30 - xcodebuild -workspace BLBook.xcworkspace -scheme BLBook -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="$DEVELOPER_NAME"
+- travis_wait xcodebuild -workspace BLBook.xcworkspace -scheme BLBook -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="$DEVELOPER_NAME"
 after_success:
   - ./scripts/sign-and-upload.sh
 after_script:
