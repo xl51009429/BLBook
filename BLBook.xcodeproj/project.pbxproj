@@ -11,11 +11,13 @@
 		6E0F8C301E5D834A000B7798 /* BLDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F8C2D1E5D834A000B7798 /* BLDBHelper.m */; };
 		6E0F8C311E5D834A000B7798 /* BLDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F8C2F1E5D834A000B7798 /* BLDBModel.m */; };
 		6E0F8C391E5D9218000B7798 /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F8C381E5D9218000B7798 /* Chapter.m */; };
+		6E193EC81E729AF200D5D88D /* BLToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E193EC71E729AF200D5D88D /* BLToolBarView.swift */; };
 		6E4DC6BC1E5FC3B1000921E1 /* background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DC6BB1E5FC3B1000921E1 /* background.jpeg */; };
 		6E4DC6C01E5FFC85000921E1 /* BookListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4DC6BE1E5FFC85000921E1 /* BookListCell.m */; };
 		6E4DC6C11E5FFC85000921E1 /* BookListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DC6BF1E5FFC85000921E1 /* BookListCell.xib */; };
 		6E4DC6C81E604450000921E1 /* PageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4DC6C61E604450000921E1 /* PageViewCell.m */; };
 		6E4DC6C91E604450000921E1 /* PageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4DC6C71E604450000921E1 /* PageViewCell.xib */; };
+		6E551FF81E763DF50021E76B /* BLBookParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E551FF71E763DF50021E76B /* BLBookParserTests.m */; };
 		6E8C5B121E6583D10058B122 /* ChapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8C5B111E6583D10058B122 /* ChapterViewController.m */; };
 		6E8DE3151E5BD2310058E6CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE3141E5BD2310058E6CD /* main.m */; };
 		6E8DE3181E5BD2310058E6CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE3171E5BD2310058E6CD /* AppDelegate.m */; };
@@ -61,6 +63,7 @@
 		6E0F8C2F1E5D834A000B7798 /* BLDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDBModel.m; sourceTree = "<group>"; };
 		6E0F8C371E5D9218000B7798 /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
 		6E0F8C381E5D9218000B7798 /* Chapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter.m; sourceTree = "<group>"; };
+		6E193EC71E729AF200D5D88D /* BLToolBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLToolBarView.swift; sourceTree = "<group>"; };
 		6E4DC6BB1E5FC3B1000921E1 /* background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpeg; sourceTree = "<group>"; };
 		6E4DC6BD1E5FFC85000921E1 /* BookListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookListCell.h; sourceTree = "<group>"; };
 		6E4DC6BE1E5FFC85000921E1 /* BookListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookListCell.m; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		6E4DC6C51E604450000921E1 /* PageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewCell.h; sourceTree = "<group>"; };
 		6E4DC6C61E604450000921E1 /* PageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewCell.m; sourceTree = "<group>"; };
 		6E4DC6C71E604450000921E1 /* PageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageViewCell.xib; sourceTree = "<group>"; };
+		6E551FF71E763DF50021E76B /* BLBookParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBookParserTests.m; sourceTree = "<group>"; };
 		6E7193CD1E67FB8600DE140E /* BLBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLBook-Bridging-Header.h"; sourceTree = "<group>"; };
 		6E8C5B101E6583D10058B122 /* ChapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterViewController.h; sourceTree = "<group>"; };
 		6E8C5B111E6583D10058B122 /* ChapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterViewController.m; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 		6E0F8C331E5D8366000B7798 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6E193EC71E729AF200D5D88D /* BLToolBarView.swift */,
 				6EFD85AA1E5ECC680086B7ED /* BookView.h */,
 				6EFD85AB1E5ECC680086B7ED /* BookView.m */,
 				6E4DC6BD1E5FFC85000921E1 /* BookListCell.h */,
@@ -283,6 +288,7 @@
 			children = (
 				6E8DE32D1E5BD2320058E6CD /* BLBookTests.m */,
 				6E8DE32F1E5BD2320058E6CD /* Info.plist */,
+				6E551FF71E763DF50021E76B /* BLBookParserTests.m */,
 			);
 			path = BLBookTests;
 			sourceTree = "<group>";
@@ -517,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E193EC81E729AF200D5D88D /* BLToolBarView.swift in Sources */,
 				6E8C5B121E6583D10058B122 /* ChapterViewController.m in Sources */,
 				6E4DC6C01E5FFC85000921E1 /* BookListCell.m in Sources */,
 				6E0F8C2A1E5D82F3000B7798 /* BLBookParser.m in Sources */,
@@ -543,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E8DE32E1E5BD2320058E6CD /* BLBookTests.m in Sources */,
+				6E551FF81E763DF50021E76B /* BLBookParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,6 +717,7 @@
 		6E8DE3411E5BD2320058E6CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BLBookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -721,6 +730,7 @@
 		6E8DE3421E5BD2320058E6CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BLBookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -733,6 +743,7 @@
 		6E8DE3441E5BD2320058E6CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = BLBookUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bacic5i5j.BLBookUITests;
@@ -744,6 +755,7 @@
 		6E8DE3451E5BD2320058E6CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = BLBookUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bacic5i5j.BLBookUITests;
