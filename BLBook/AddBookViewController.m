@@ -324,6 +324,8 @@
         [_task cancel];
     }
     [[NSNotificationCenter defaultCenter]removeObserver:self];
+    
+    BLLogDebug(@"AddBookViewController release");
 }
 
 #pragma mark - deleagte
@@ -333,5 +335,6 @@
     [self.view endEditing:YES];
     [self submitButtonClick];
 }
+
 
 @end

@@ -19,7 +19,7 @@ import UIKit
 
 class BLToolBarView: UIView {
 
-    public var delegate:BLToolBarViewDelegate?;
+    public weak var delegate:BLToolBarViewDelegate?;
 
     override init(frame: CGRect) {
         super.init(frame: frame)

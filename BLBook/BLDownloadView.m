@@ -282,7 +282,6 @@
 {
     _progress = progress;
     if (!_isDownload) {
-        //[self ]
         _isDownload = YES;
     }
     dispatch_async(dispatch_get_main_queue(), ^{

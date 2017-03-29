@@ -114,11 +114,14 @@ static NSInteger lineNumsOfPage = 0;
             //CFRelease(lineRef);
         }
     }];
+    
+    //最后一页文字拼接
     if (lastRange.location + lastRange.length < attStr.length) {
         NSRange range = NSMakeRange(lastRange.location + lastRange.length,attStr.length - lastRange.location - lastRange.length);
         NSAttributedString *lineString = [attStr attributedSubstringFromRange:range];
         [returnArray addObject:lineString];
     }
+    
     return returnArray;
 }
 

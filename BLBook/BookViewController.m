@@ -225,6 +225,7 @@
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter]removeObserver:self];
+    BLLogDebug(@"BookViewController release");
 }
 
 @end

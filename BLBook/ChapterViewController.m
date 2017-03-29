@@ -89,4 +89,9 @@
     }
 }
 
+- (void)dealloc
+{
+    BLLogDebug(@"ChapterViewController release");
+}
+
 @end
