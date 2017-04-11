@@ -50,7 +50,7 @@ static NSInteger lineNumsOfPage = 0;
 
 + (void)parserChapterOfContent:(NSString *)content bookId:(int)bookId
 {
-    NSString *partten = @"正?文? *第[0-9一二三四五六七八九十百千]*[章回] .*";
+    NSString *partten = @"正?文? *第[0-9一二三四五六七八九十百千零]*[章回] .*";
     NSError *error = nil;
     NSRegularExpression *expression = [NSRegularExpression regularExpressionWithPattern:partten options:NSRegularExpressionCaseInsensitive error:&error];
     if (error) {

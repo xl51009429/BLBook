@@ -27,6 +27,7 @@
 		6E8DE3391E5BD2320058E6CD /* BLBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE3381E5BD2320058E6CD /* BLBookUITests.m */; };
 		6E8DE3891E5BDFBC0058E6CD /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE3881E5BDFBC0058E6CD /* BookViewController.m */; };
 		6E8DE38C1E5C19810058E6CD /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8DE38B1E5C19810058E6CD /* FileUtil.m */; };
+		6E9627081E8CD0E800A099F3 /* DownloadFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9627071E8CD0E800A099F3 /* DownloadFileUtil.m */; };
 		6EC003981E64230000D82112 /* BLDownloadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC003971E64230000D82112 /* BLDownloadView.m */; };
 		6EFD859D1E5E80350086B7ED /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD859C1E5E80350086B7ED /* Book.m */; };
 		6EFD85A01E5E81B30086B7ED /* AddBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFD859F1E5E81B30086B7ED /* AddBookViewController.m */; };
@@ -93,6 +94,8 @@
 		6E8DE3881E5BDFBC0058E6CD /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
 		6E8DE38A1E5C19810058E6CD /* FileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
 		6E8DE38B1E5C19810058E6CD /* FileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
+		6E9627061E8CD0E800A099F3 /* DownloadFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadFileUtil.h; sourceTree = "<group>"; };
+		6E9627071E8CD0E800A099F3 /* DownloadFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadFileUtil.m; sourceTree = "<group>"; };
 		6EC003961E64230000D82112 /* BLDownloadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDownloadView.h; sourceTree = "<group>"; };
 		6EC003971E64230000D82112 /* BLDownloadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDownloadView.m; sourceTree = "<group>"; };
 		6EFD859B1E5E80350086B7ED /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 				6E8DE38B1E5C19810058E6CD /* FileUtil.m */,
 				6E0F8C281E5D82F3000B7798 /* BLBookParser.h */,
 				6E0F8C291E5D82F3000B7798 /* BLBookParser.m */,
+				6E9627061E8CD0E800A099F3 /* DownloadFileUtil.h */,
+				6E9627071E8CD0E800A099F3 /* DownloadFileUtil.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -526,6 +531,7 @@
 				6E193EC81E729AF200D5D88D /* BLToolBarView.swift in Sources */,
 				6E8C5B121E6583D10058B122 /* ChapterViewController.m in Sources */,
 				6E4DC6C01E5FFC85000921E1 /* BookListCell.m in Sources */,
+				6E9627081E8CD0E800A099F3 /* DownloadFileUtil.m in Sources */,
 				6E0F8C2A1E5D82F3000B7798 /* BLBookParser.m in Sources */,
 				6E8DE38C1E5C19810058E6CD /* FileUtil.m in Sources */,
 				6E8DE31B1E5BD2310058E6CD /* MainViewController.m in Sources */,

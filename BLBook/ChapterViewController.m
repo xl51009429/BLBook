@@ -26,20 +26,24 @@
 
 - (void)bl_initData
 {
-    Chapter *currentChapter = [[Chapter selectTableWhereKey:@"blID" equalTo:@([[NSUserDefaults standardUserDefaults] integerForKey:self.book.name])] firstObject];
-    self.dataSource = [[NSMutableArray alloc]init];
-    NSArray *chapters = [Chapter selectTableWhereKey:@"bookID" equalTo:@(self.book.blID)];
-    [self.dataSource addObjectsFromArray:chapters];
-    [self.tableView reloadData];
-    [chapters enumerateObjectsUsingBlock:^(Chapter *  _Nonnull chapter, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (chapter.blID == currentChapter.blID) {
-            self.chapterIndex = idx;
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:idx inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
-            });
-            return ;
-        }
-    }];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        Chapter *currentChapter = [[Chapter selectTableWhereKey:@"blID" equalTo:@([[NSUserDefaults standardUserDefaults] integerForKey:self.book.name])] firstObject];
+        self.dataSource = [[NSMutableArray alloc]init];
+        NSArray *chapters = [Chapter selectTableWhereKey:@"bookID" equalTo:@(self.book.blID)];
+        [self.dataSource addObjectsFromArray:chapters];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+        [chapters enumerateObjectsUsingBlock:^(Chapter *  _Nonnull chapter, NSUInteger idx, BOOL * _Nonnull stop) {
+            if (chapter.blID == currentChapter.blID) {
+                self.chapterIndex = idx;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:idx inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
+                });
+                return ;
+            }
+        }];
+    });
 }
 
 - (void)bl_initUI
